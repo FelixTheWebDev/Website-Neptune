@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEPTUNE - Techno DJ</title>
+
+    <!-- Custom Stylesheets by FelixTheWebDev -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="teaser.css">
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+    <!-- <script src="./components/nextGigs/ticketButton.js" type="module"></script> -->
+
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- https://www.flaticon.com/search?word=email -->
+</head>
+<script>
+    window.addEventListener("scroll", () => {
+        const headerBox = document.getElementById("header-box");
+        const scrollButtons = document.querySelector(".scroll-buttons");
+
+        const triggerPoint = headerBox.offsetTop + headerBox.offsetHeight;
+
+        if (window.scrollY > triggerPoint) {
+            scrollButtons.classList.add("scroll-buttons--sticky");
+        } else {
+            scrollButtons.classList.remove("scroll-buttons--sticky");
+        }
+    });
+</script>
+
+<body>
+
+    <!-- Dark/Lightmode Toggle -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+        <div class="icon sun"></div>
+        <div class="icon moon"></div>
+    </button>
+
+    <!-- Headerbereich mit Bild-Slider -->
+    <header>
+        <div class="slider">
+            <div class="slides">
+                <img src="images/a-min.jpg" alt="Slide 1">
+                <img src="images/b-min.jpg" alt="Slide 2">
+                <img src="images/c-min.jpg" alt="Slide 3">
+                <img src="images/d-min.jpeg" alt="Slide 4">
+                <img src="images/e-min.jpeg" alt="Slide 5">
+                <img src="images/f-min.jpeg" alt="Slide 6">
+            </div>
+        </div>
+
+        <div id="header-box">
+            <img src="images/neptune_logo-min.png" alt="NEPTUNE Logo" class="logo">
+        </div>
+
+        <div class="scroll-buttons">
+            <button onclick="scrollToSection('next-gigs')">UPCOMING GIGS</button>
+            <button onclick="scrollToSection('about-me')">GET IN TOUCH</button>
+        </div>
+    </header>
+
+    <!-- Next Gigs -->
+    <section id="next-gigs">
+        <h2 class="headline">UPCOMING GIGS</h2>
+
+        <!-- Gig # 1 -->
+        <div class="gig">
+            <div class="date">
+                <span>19</span>
+                <span>APRIL</span>
+                <span>2025</span>
+            </div>
+            <div class="info">
+                <h3>Berlin Techno Nights</h3>
+                <p>Berlin, 22:00 Uhr</p>
+                <a class="ticket-button" target="_blank" href="https://www.ticketseite.de/frankfurt">
+                    Get Tickets
+                </a>
+            </div>
+        </div>
+
+        <!-- Gig # 2 -->
+        <div class="gig">
+            <div class="date"><span>5</span><span>JUNI</span><span>2025</span></div>
+            <div class="info">
+                <h3>IKARUS Festival</h3>
+                <p>Memmingen, 14:00</p>
+                <a class="ticket-button" target="_blank" href="https://www.ticketseite.de/frankfurt">
+                    Get Tickets
+                </a>
+            </div>
+        </div>
+
+        <!-- Gig # 3 -->
+        <div class="gig">
+            <div class="date"><span>27</span><span>AUG.</span><span>2025</span></div>
+            <div class="info">
+                <h3>Berlin Techno Nights</h3>
+                <p>Berlin, 24:00</p>
+                <a class="ticket-button" target="_blank" href="https://www.ticketseite.de/frankfurt">
+                    Get Tickets
+                </a>
+            </div>
+        </div>
+
+        <!-- Gig # 4 -->
+        <div class="gig">
+            <div class="date"><span>27</span><span>OKT.</span><span>2025</span></div>
+            <div class="info">
+                <h3>Electronic Vibes Crawnberry Festival</h3>
+                <p>Berlin</p>
+                <a class="ticket-button" target="_blank" href="https://www.ticketseite.de/frankfurt">
+                    Get Tickets
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bereich für die Künstlerbeschreibung und Social Media Links -->
+    <!-- About Me -->
+    <section id="about-me">
+        <h2 class="headline">GET IN TOUCH</h2>
+
+        <div class="about">
+            <div class="about-image">
+                <img src="images/4-min.png" alt="NEPTUNE DJ" />
+            </div>
+
+            <div class="about-text">
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/neptunetechnodj/" target="_blank">
+                        <img src="icons/instagram.png" alt="Instagram" />
+                    </a>
+                    <a href="https://soundcloud.com/neptune-techno-dj" target="_blank">
+                        <img src="icons/soundcloud.png" alt="SoundCloud" />
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCW71GVV-CShJeq3bGjmQKrw" target="_blank">
+                        <img src="icons/youtube.png" alt="YouTube" />
+                    </a>
+                    <a href="mailto:kontakt@neptune.dj" target="_blank">
+                        <img src="icons/email.png" alt="E-Mail" />
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Artist Image Section -->
+    <section id="artist-gallery">
+        <h2 class="headline" style="margin:3rem 0">NEPTUNE Live</h2>
+        <div class="image-grid">
+            <img src="images/16.jpg" alt="NEPTUNE Live Shot 1" />
+            <img src="images/22-min.jpeg" alt="NEPTUNE Live Shot 2" />
+            <img src="images/84.jpg" alt="NEPTUNE Live Shot 3" />
+            <img src="images/11-min.jpeg" alt="NEPTUNE Live Shot 4" />
+            <img src="images/41.jpg" alt="NEPTUNE Live Shot 5" />
+            <img src="images/9.jpg" alt="NEPTUNE Live Shot 6" />
+        </div>
+    </section>
+    <!-- Lightbox Overlay -->
+    <div id="lightbox" class="hidden">
+        <span id="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Expanded View" />
+    </div>
+
+    <footer>
+        <p>Some Random Footer 2025<br>NEPTUNE</p>
+    </footer>
+
+</body>
+
+</html>

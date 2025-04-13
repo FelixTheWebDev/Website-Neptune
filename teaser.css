@@ -1,0 +1,21 @@
+/* Header-Box Styling */
+#header-box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    top:30%;
+    padding: 10px;
+    /* background-color: rgba(17, 69, 104, 0.7); */
+    transform: translateX(-50%);
+    left: 50%;
+    text-align: center;
+    z-index: 10;
+}
+
+.logo {
+    width: 320px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}

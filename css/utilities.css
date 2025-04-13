@@ -1,0 +1,66 @@
+/* utilities.css */
+
+/* Text-Alignment */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* Margin und Padding */
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.pt-3 {
+  padding-top: 3rem;
+}
+
+.pb-3 {
+  padding-bottom: 3rem;
+}
+
+/* Colors */
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
+
+/* Display */
+.d-flex {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
+/* Positioning */
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.z-10 {
+  z-index: 10;
+}

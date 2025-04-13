@@ -1,0 +1,29 @@
+
+.slider {
+    position: absolute; /* Wichtig für absolute Slides */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.slides {
+    position: relative; /* Container für absolute Bilder */
+    width: 100%;
+    height: 100%;
+}
+
+.slides img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    filter: brightness(30%);
+    z-index: 0;
+}

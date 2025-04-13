@@ -1,0 +1,8 @@
+/* Dark-Theme mit Media Query */
+@media (prefers-color-scheme: light) {
+    :root {
+        color: yellow;
+    }
+}
+
+/* todo: add dark mode toggle */

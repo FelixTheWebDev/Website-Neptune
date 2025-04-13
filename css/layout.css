@@ -1,0 +1,57 @@
+/* layout.css */
+
+/* Container für zentriertes Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+  }
+  
+  /* Flexbox für horizontale Ausrichtung */
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Flexbox für vertikale Ausrichtung */
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  /* 2-Spaltiges Grid-Layout */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  /* 3-Spaltiges Grid-Layout */
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  /* Fullwidth Section */
+  .full-width-section {
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+  }
+  
+  /* Responsive Grid für kleinere Bildschirme (Tablet/Smartphone) */
+  @media (max-width: 900px) {
+    .grid-2 {
+      grid-template-columns: 1fr; /* Einspaltig */
+    }
+  
+    .grid-3 {
+      grid-template-columns: 1fr 1fr; /* Zweispaltig */
+    }
+  }
+  

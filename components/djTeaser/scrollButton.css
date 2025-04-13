@@ -1,0 +1,47 @@
+.scroll-buttons {
+    position: absolute;
+    display: flex;
+    width:100%;
+    justify-content: center;
+    gap: 15px;
+    left: 50%;
+
+    /* top: calc(100vh - 100px); initiale Position unten im Hero-Bereich */
+
+    transform: translateX(-50%);
+    
+   
+    z-index: 10;
+    transition: all 0.3s ease;
+
+}
+
+.scroll-buttons--sticky {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(6px);
+    padding: 10px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-buttons button {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-buttons button:hover {
+    /* transform: scale(1.05); */
+    background: #fff;
+    color: rgb(0, 80, 190);
+    font-weight:900;
+}

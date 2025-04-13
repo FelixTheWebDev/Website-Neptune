@@ -1,0 +1,37 @@
+/* Base Styles */
+@import './base/reset.css';
+@import './base/variables.css';
+@import './base/globals.css';
+@import './base/darkmode.css';
+
+/* Layout */
+/* @import './layout/grid.css';
+@import './layout/header.css';
+@import './layout/footer.css'; */
+
+/* Components */
+/* DJ teaser */
+@import '../components/djTeaser/header.css';
+@import '../components/djTeaser/slider.css';
+@import '../components/djTeaser/scrollButton.css';
+
+/* Next gigs / upcoming gigs section */
+@import '../components/nextGigs/wrapper.css';
+@import '../components/nextGigs/gig.css';
+@import '../components/nextGigs/date.css';
+@import '../components/nextGigs/info.css';
+@import '../components/nextGigs/ticketButton.css';
+
+/* Artist info */
+@import '../components/artistInfo/wrapper.css';
+
+/* Gallery */
+@import '../components/gallery.css';
+@import '../components/lightbox.css';
+
+/* Footer */
+@import '../components/footer.css';
+
+/* Utilities */
+/* @import './utilities/animations.css';
+@import './utilities/responsive.css'; */
