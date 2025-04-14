@@ -25,9 +25,15 @@ function showSlides() {
 // Smooth Scroll zu Sektionen
 // -------------------------
 function scrollToSection(id) {
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-}
-
+    const element = document.getElementById(id);
+    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+    const offset = -50; // 👈 hier passt du den Abstand an (negativ = höher scrollen)
+  
+    window.scrollTo({
+      top: elementPosition + offset,
+      behavior: 'smooth'
+    });
+  }
 // -------------------------
 // Fade-In für Gigs (Intersection Observer)
 // -------------------------

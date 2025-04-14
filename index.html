@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?&family=RocknRoll+One" rel="stylesheet">
     <!-- https://www.flaticon.com/search?word=email -->
 </head>
 <script>
@@ -62,13 +63,16 @@
         </div>
 
         <div class="scroll-buttons">
-            <button onclick="scrollToSection('next-gigs')">UPCOMING GIGS</button>
-            <button onclick="scrollToSection('about-me')">GET IN TOUCH</button>
+            <button onclick="scrollToSection('next-gigs')">NEXT GIGS</button>
+            <button class="icon-only" onclick="scrollToSection('artist-gallery')">
+                <img src="icons/image-gallery.png" alt="Gallery" class="gallery-icon">
+            </button>
+            <button onclick="scrollToSection('about-me')">CONNECT</button>
         </div>
     </header>
 
     <!-- Next Gigs -->
-    <section id="next-gigs">
+    <section id="next-gigs" class="mypattern">
         <h2 class="headline">UPCOMING GIGS</h2>
 
         <!-- Gig # 1 -->
@@ -128,7 +132,7 @@
     <!-- Bereich für die Künstlerbeschreibung und Social Media Links -->
     <!-- About Me -->
     <section id="about-me">
-        <h2 class="headline">GET IN TOUCH</h2>
+        <h2 class="headline">GET IN TOUCH!</h2>
 
         <div class="about">
             <div class="about-image">
@@ -137,7 +141,7 @@
 
             <div class="about-text">
                 <!-- Social Media Icons -->
-                <div class="social-icons">
+                <div class="social-icons social-arc">
                     <a href="https://www.instagram.com/neptunetechnodj/" target="_blank">
                         <img src="icons/instagram.png" alt="Instagram" />
                     </a>
@@ -158,7 +162,7 @@
 
     <!-- Artist Image Section -->
     <section id="artist-gallery">
-        <h2 class="headline" style="margin:3rem 0">NEPTUNE Live</h2>
+        <h2 class="headline">IMPRESSIONS</h2>
         <div class="image-grid">
             <img src="images/16.jpg" alt="NEPTUNE Live Shot 1" />
             <img src="images/22-min.jpeg" alt="NEPTUNE Live Shot 2" />

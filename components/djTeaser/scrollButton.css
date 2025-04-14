@@ -1,18 +1,19 @@
 .scroll-buttons {
     position: absolute;
     display: flex;
-    width:100%;
+    width: 100%;
     justify-content: center;
-    gap: 15px;
+    gap: 22px;
     left: 50%;
 
-    /* top: calc(100vh - 100px); initiale Position unten im Hero-Bereich */
-
     transform: translateX(-50%);
-    
-   
+
     z-index: 10;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
+
+    @media (max-width: 468px) {
+        gap: 10px;
+    }   
 
 }
 
@@ -24,24 +25,53 @@
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(6px);
-    padding: 10px 20px;
+    padding: 22px 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .scroll-buttons button {
     background: transparent;
-    color: #fff;
+    /* color: #fff; */
     border: 2px solid #fff;
-    padding: 8px 15px;
-    font-size: 14px;
+    padding: 6px 15px;
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 2px;
-    transition: all 0.3s ease, transform 0.3s ease;
+    border-radius: 10px;
+    width: 130px;
+    transition: all 0.2s ease, transform 0.2s ease;
 }
 
+/* 👇 Gilt für alle Buttons beim Hover – außer .icon-only */
 .scroll-buttons button:hover {
-    /* transform: scale(1.05); */
     background: #fff;
+    filter: brightness(1) invert(0);
     color: rgb(0, 80, 190);
-    font-weight:900;
+    font-weight: 900;
+    transform: scale(1.02);
+}
+
+/* 👇 Bild-Icon initial: weiß auf transparent → wird invertiert = schwarz */
+.gallery-icon {
+    height: 45px;
+    filter: invert(1);
+    /* Original = weiß */
+    transition: filter 0.2s ease;
+}
+
+.scroll-buttons .icon-only{
+    background: transparent;
+    border: none;
+    width: 67px;
+
+    button {
+        border: none;
+    }
+
+    /* filter: invert(1); */
+}
+
+/* 👇 Nur das Bild selbst wird beim Hover schwarz */
+.icon-only:hover .gallery-icon {
+    filter: invert(0);
+    /* Schwarz */
 }
