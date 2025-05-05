@@ -111,20 +111,41 @@
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.social-icons img {
-    width: 100%;
-    height: 100%;
-    transform: translateX(0.25rem);
-    /* object-fit: contain; */
-    filter: brightness(1) invert(1);
-    /* Weiß auf dunklem BG */
-}
-
 /* Hover-Effect */
 .social-icons a:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     filter: brightness(1.5);
 }
+
+
+
+.social-icons a:nth-child(1) img:hover {
+    background: rgb(247, 88, 25);
+}
+
+.social-icons a:nth-child(2) img:hover {
+    background: rgb(255, 18, 18);
+}
+
+.social-icons a:nth-child(3) img:hover {
+    background: rgb(219, 34, 210);
+}
+
+.social-icons a:nth-child(4) img:hover {
+    background: rgb(235, 220, 23);
+}
+
+
+.social-icons img {
+    background: #fff;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    /* transform: scale(0.9); */
+    width: 100%;
+    height: 100%;
+}
+
+
 
 @media (min-width: 765px) {
     .social-arc {
@@ -145,7 +166,6 @@
     .social-arc a img {
         width: 100%;
         height: 100%;
-        filter: brightness(1) invert(1);
     }
 
     /* Positionen für Bogenform */
@@ -171,17 +191,21 @@
         top: 50%;
         /* transform: translateY(-50%); */
     }
+}
 
-    /* Responsives Feintuning */
-    @media (max-width: 768px) {
-        .social-arc {
-            width: 200px;
-            height: 150px;
-        }
+/* Responsives Feintuning */
+@media (max-width: 768px) {
+    .social-arc {
+        width: 200px;
+        height: 150px;
+    }
 
-        .social-arc a {
-            width: 50px;
-            height: 50px;
-        }
+    .social-arc a {
+        width: 50px;
+        height: 50px;
+    }
+
+    .social-arc img {
+        /* filter: brightness(1) invert(1); */
     }
 }
