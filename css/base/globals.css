@@ -1,28 +1,27 @@
 .headline {
-    margin: 5rem auto;
-    border-bottom: 1px solid #fff;
-    padding-bottom: 1.4rem;
+    padding: 3rem 0 1rem;
+    /* border-bottom: 1px solid #fff; */
+    /* padding-bottom: 1.4rem; */
     font-family: "RocknRoll One", sans-serif;
     font-style: normal;
     /* font-family: 'Bebas Neue', 'sans-serif';  */
-    font-size: 3rem;
+    font-size: 2.3rem;
     margin-bottom: 3rem;
     color: #fff;
     letter-spacing: 1px;
     text-transform: uppercase;
-    width: 74%;
+    width: 100%; 
+    margin: auto;
     line-height: 3rem;
-
 
     @media (max-width: 648px) {
         font-size: 2.5rem;
-        width: 90%;
         line-height: 1.5rem;
     }
 
     @media (max-width: 468px) {
         font-size: 2rem;
-        width: 95%;
+        /* width: 95%; */
     }
 }
 
@@ -42,3 +41,56 @@
 .social-links a:hover {
     color: #fff;
 }
+
+
+header h1 {
+    font-size: 4rem;
+    margin: 0;
+  }
+  header p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  header a {
+    margin-top: 2rem;
+    background: #00ffff;
+    color: #000;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+  }
+  section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+ 
+  .contact, .socials {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .socials a {
+    color: #00ffff;
+    text-decoration: none;
+  }
+  .bio {
+    margin-top: 1rem;
+  }
+  .rider, .media, .videos {
+    margin-top: 2rem;
+  }
+  .language-toggle {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  .language-toggle button {
+    background: transparent;
+    border: 1px solid #00ffff;
+    color: #00ffff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  .hidden { display: none; }

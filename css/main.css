@@ -14,6 +14,10 @@
 @import '../components/djTeaser/header.css';
 @import '../components/djTeaser/slider.css';
 @import '../components/djTeaser/scrollButton.css';
+    
+
+/* Press Kit */
+@import '../components/presskit/presskit.css';
 
 /* Next gigs / upcoming gigs section */
 @import '../components/nextGigs/wrapper.css';
@@ -21,6 +25,9 @@
 @import '../components/nextGigs/date.css';
 @import '../components/nextGigs/info.css';
 @import '../components/nextGigs/ticketButton.css';
+
+/* Media-Grid */
+@import '../components/media-grid/main.css';
 
 /* Artist info */
 @import '../components/artistInfo/wrapper.css';

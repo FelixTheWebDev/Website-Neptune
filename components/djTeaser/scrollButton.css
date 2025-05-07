@@ -14,7 +14,6 @@
     @media (max-width: 468px) {
         gap: 10px;
     }   
-
 }
 
 .scroll-buttons--sticky {
@@ -27,18 +26,20 @@
     backdrop-filter: blur(6px);
     padding: 22px 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-top:-20rem;
 }
 
 .scroll-buttons button {
     background: transparent;
     /* color: #fff; */
     border: 2px solid #fff;
-    padding: 6px 15px;
+    padding: 14px 20px;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 4px;
     width: 200px;
     transition: all 0.2s ease, transform 0.2s ease;
+    margin-top: 20rem;
 }
 
 /* 👇 Gilt für alle Buttons beim Hover – außer .icon-only */

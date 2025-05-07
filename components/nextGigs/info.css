@@ -10,8 +10,8 @@
     /* event name */
     h3 {
         font-family: var(--font-headline);
-        font-size: 26px;
-        font-weight: 300;
+        font-size: 24px;
+        font-weight: 500;
         letter-spacing: 1.25px;
         color: var(--accent-color-1);
         margin: 0;
@@ -23,15 +23,8 @@
 
         /* Media: Smartphone */
         @media (max-width: 468px) {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             width: 98%;
-        }
-
-        /* Media: Smartphone */
-        @media (max-width: 486px) {
-            font-size: 1.5rem;
-            width: 92%;
-            border-bottom: 1px solid #fff;
         }
     }
 

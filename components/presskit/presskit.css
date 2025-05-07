@@ -1,0 +1,90 @@
+.presskit {
+    /* background-color: #0a0a0a;
+    color: #eaeaea; */
+    padding: 0rem 1.5rem;
+    /* font-family: 'Inter', sans-serif;
+    line-height: 1.6; */
+  }
+  
+  .presskit-inner {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .presskit h2 {
+    text-align: center;
+  }
+  
+
+  .presskit h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: var(--accent-color-1);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.25rem;
+  }
+  
+  .presskit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .presskit a {
+    color: #00fff7;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  
+  .presskit a:hover {
+    text-decoration: underline;
+  }
+  
+  .bio, .tech-rider {
+    margin-bottom: 2rem;
+  }
+  
+  .bio p, .tech-rider p {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin: 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin-bottom: 0.4rem;
+  }
+  
+
+  .lang-toggle {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .lang-btn {
+    background: none;
+    color: #00fff7;
+    border: 1px solid #00fff7;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .lang-btn.active {
+    background: #00fff7;
+    color: #0a0a0a;
+  }
+  .bio-section {
+    display: none;
+  }
+  .bio-section.active {
+    display: block;
+  }
+  

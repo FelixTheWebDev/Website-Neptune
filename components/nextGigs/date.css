@@ -19,7 +19,7 @@
   font-size: 2.7rem;
   font-weight: 800;
   line-height: 2.5rem;
-  color: rgb(0, 97, 224);
+  color: var(--accent-color-1);
 }
 
 
