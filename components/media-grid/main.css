@@ -35,14 +35,20 @@
     .media-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .media-divider { width:95% }
+
+    .media-divider {
+        width: 95%
+    }
 }
 
 @media (min-width: 900px) {
     .media-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-    .media-divider { width: 68%; }
+
+    .media-divider {
+        width: 68%;
+    }
 }
 
 .media-item {
@@ -53,7 +59,7 @@
 }
 
 .media-item:hover {
-    transform: scale(1.00   );
+    transform: scale(1.00);
 }
 
 .media-item img {
@@ -75,26 +81,37 @@
     aspect-ratio: 16 / 9;
     margin: auto;
     cursor: pointer;
-  }
-  
-  .youtube-thumbnail {
+}
+
+.youtube-thumbnail {
     position: absolute;
     inset: 0;
-  }
-  
-  .youtube-thumbnail img {
+    animation: all 0.3s ease-in-out;
+
+    :hover {
+        transform: scale(1.1);
+        transform: rotate(2deg);
+
+    }
+}
+
+.youtube-thumbnail img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
-  }
-  
-  .play-button {
+
+
+}
+
+
+
+.play-button {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
     width: 64px;
     height: 64px;
     background: rgba(0, 0, 0, 0.7);
@@ -103,21 +120,23 @@
     line-height: 64px;
     text-align: center;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     pointer-events: none;
-  }
-  
-  .youtube-wrapper {
+}
+
+.youtube-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 ratio */
+    padding-bottom: 56.25%;
+    /* 16:9 ratio */
     height: 0;
     overflow: hidden;
     border-radius: 12px;
-  }
-  .youtube-wrapper iframe {
+}
+
+.youtube-wrapper iframe {
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-  }
-  
+}

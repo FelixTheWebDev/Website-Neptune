@@ -5,16 +5,20 @@
     justify-content: center;
     gap: 22px;
     left: 50%;
-
+    align-items: center;
     transform: translateX(-50%);
+    justify-content: space-around;
 
     z-index: 10;
     transition: all 0.2s ease;
 
     @media (max-width: 468px) {
         gap: 10px;
-    }   
+    }
 }
+
+
+
 
 .scroll-buttons--sticky {
     position: fixed;
@@ -26,29 +30,40 @@
     backdrop-filter: blur(6px);
     padding: 22px 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    margin-top:-20rem;
+    margin-top: -20rem;
 }
 
 .scroll-buttons button {
     background: transparent;
     /* color: #fff; */
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     padding: 14px 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
     width: 200px;
-    transition: all 0.2s ease, transform 0.2s ease;
+    /* transition: all 0.2s ease-in-out, transform 0.2s ease; */
     margin-top: 20rem;
+    transition: transform 0.2s ease;
+    will-change: transform;
+    transform-origin: center;
+}
+
+.language-toggle button:hover {
+    transform: scale(1.2);
 }
 
 /* 👇 Gilt für alle Buttons beim Hover – außer .icon-only */
-.scroll-buttons button:hover {
+.scroll-buttons>button:first-of-type:hover {
+
     background: #fff;
     filter: brightness(1) invert(0);
-    color: rgb(0, 80, 190);
+    color: var(--accent-color-1);
     font-weight: 900;
-    transform: scale(1.02);
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+    will-change: transform;
+    transform-origin: center;
 }
 
 /* 👇 Bild-Icon initial: weiß auf transparent → wird invertiert = schwarz */
@@ -59,8 +74,8 @@
     transition: filter 0.2s ease;
 }
 
-.scroll-buttons .icon-only{
-    background: transparent;
+.scroll-buttons .icon-only {
+    /* background: transparent; */
     border: none;
     width: 67px;
 
@@ -69,10 +84,4 @@
     }
 
     /* filter: invert(1); */
-}
-
-/* 👇 Nur das Bild selbst wird beim Hover schwarz */
-.icon-only:hover .gallery-icon {
-    filter: invert(0);
-    /* Schwarz */
 }

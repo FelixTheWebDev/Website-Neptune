@@ -26,13 +26,17 @@
     window.addEventListener("scroll", () => {
         const headerBox = document.getElementById("header-box");
         const scrollButtons = document.querySelector(".scroll-buttons");
+        const languageToggle = document.getElementsByClassName("language-toggle")[0];
 
         const triggerPoint = headerBox.offsetTop + headerBox.offsetHeight;
 
         if (window.scrollY > triggerPoint) {
             scrollButtons.classList.add("scroll-buttons--sticky");
+            languageToggle.classList.remove("hidden");
         } else {
             scrollButtons.classList.remove("scroll-buttons--sticky");
+            languageToggle.classList.add("hidden");
+            
         }
     });
 </script>
@@ -64,6 +68,10 @@
         <div class="scroll-buttons">
             <!-- <button onclick="scrollToSection('next-gigs')">NEXT GIGS</button> -->
             <button onclick="scrollToSection('about-me')">GET IN TOUCH</button>
+            <div class="language-toggle hidden">
+                <button onclick="toggleBio('de')"></button>
+                <button onclick="toggleBio('en')"></button>
+            </div>
             <!-- <button class="icon-only" onclick="scrollToSection('artist-gallery')">
                 <img src="icons/image-gallery.png" alt="Gallery" class="gallery-icon">
             </button> -->
@@ -170,117 +178,121 @@
         <div class="presskit-inner">
             <h2 class="headline">Electronic Press Kit</h2>
             <hr class="media-divider">
-            <div class="presskit-flex">
-                <div class="contact">
+            <div class="presskit-inner">
 
-                    <p>Im Stecket 4, 77855 Achern (GER)</p>
-                    <p><strong>Mobil:</strong> 0175 1482000</p>
-                    <p><strong>E-Mail:</strong> <a href="mailto:info@neptunetechnodj.de">info@neptunetechnodj.de</a></p>
-                </div>
-            </div>
+                <div class="presskit-contact">
 
-
-            <div id="bio-de" class="bio">
-                <div class="flex">
-                    <h3>Biografie (DE)</h3>
-                    <div class="language-toggle">
-                        <button onclick="toggleBio('de')" style="transform:scale(1.2)"></button>
-                        <button onclick="toggleBio('en')" style="transform:scale(0.9)"></button>
+                    <div class="contact">
+                        <h3>Kontakt</h3>
+                        <p>Im Stecket 4, 77855 Achern (GER)</p>
+                        <p><strong>Mobil:</strong> 0175 1482000</p>
+                        <p><strong>E-Mail:</strong> <a href="mailto:info@neptunetechnodj.de">info@neptunetechnodj.de</a>
+                        </p>
                     </div>
+                    <img src="images/545.jpg" alt="NEPTUNE DJ Portrait" class="neptune-contact-image" />
+
                 </div>
-                <p>NEPTUNE ist ein aufstrebender DJ aus Offenburg (GER), der sich innerhalb kürzester Zeit durch
-                    seine
-                    kraftvollen Sets und lebhafte Bühnenpräsenz einen festen Platz in der Technoszene erspielt hat.
-                    Erlebte er noch im Dezember 2023 seine Feuertaufe als DJ in einem großen Club in seiner Region,
-                    kann
-                    er mittlerweile auf zahlreiche weitere Auftritte zurückblicken. Hierbei begeisterte er
-                    zahlreiche
-                    Raver in Clubs wie Universal DOG, Halle02, Proton The Club, A8 Discoplex, Hans Bunte Areal,
-                    Basement
-                    The Club und Festivals wie dem LOA Festival in Luxembourg und dem Ikarus Festival in Memmingen.
-                    Er
-                    hat sich bereits Line-ups mit Artists wie Anxhela, Nusha, Armin van Buuren, Johannes Schuster,
-                    Format B, A.D.H.S., Boris Brejcha, Deborah de Luca, Holy Priest, I Hate Models, Chris Liebing,
-                    A.N.I., Fenrick, CUDI und Vini Vici geteilt. Seine auffällige Bühnenpräsenz, bei der er seine
-                    Begeisterung für Techno regelmäßig „raustanzt“, macht ihn einzigartig und steckt jeden Zuhörer
-                    im
-                    Publikum an, mit ihm zu feiern. Die Musik des 24-jährigen zeichnet sich stets durch einen
-                    kraftvollen, treibenden Bass gepaart mit epischen Melodien und Vocals aus, welche ein absoluter
-                    Genuss auf großen Soundanlagen sind und stets ein abwechslungsreiches, geladenes Set
-                    versprechen.
-                    Mit ungebrochenem Enthusiasmus und einer unaufhaltsamen Entwicklung ist NEPTUNE bereit, die
-                    Techno-Szene zu erobern und neue Maßstäbe zu setzen. Seine Liebe zur elektronischen Musik und
-                    sein
-                    Engagement machen ihn zu einem aufstrebenden Künstler, den man im Auge behalten sollte.Also
-                    lasst
-                    uns zusammen eine unvergessliche Party mit ihm haben! </p>
-            </div>
-            <div id="bio-en" class="bio hidden">
-                <div class="flex">
-                    <h3>Biography (EN)</h3>
-                    <div class="language-toggle">
-                        <button onclick="toggleBio('de')" style="transform:scale(0.9)"></button>
-                        <button onclick="toggleBio('en')" style="transform:scale(1.2)"></button>
+
+                <div id="bio-de" class="bio">
+                    <div class="flex">
+                        <h3>Biografie</h3>
                     </div>
+                    <p>NEPTUNE ist ein aufstrebender DJ aus Offenburg (GER), der sich innerhalb kürzester Zeit durch
+                        seine
+                        kraftvollen Sets und lebhafte Bühnenpräsenz einen festen Platz in der Technoszene erspielt hat.
+                        Erlebte er noch im Dezember 2023 seine Feuertaufe als DJ in einem großen Club in seiner Region,
+                        kann
+                        er mittlerweile auf zahlreiche weitere Auftritte zurückblicken. Hierbei begeisterte er
+                        zahlreiche
+                        Raver in Clubs wie Universal DOG, Halle02, Proton The Club, A8 Discoplex, Hans Bunte Areal,
+                        Basement
+                        The Club und Festivals wie dem LOA Festival in Luxembourg und dem Ikarus Festival in Memmingen.
+                        Er
+                        hat sich bereits Line-ups mit Artists wie Anxhela, Nusha, Armin van Buuren, Johannes Schuster,
+                        Format B, A.D.H.S., Boris Brejcha, Deborah de Luca, Holy Priest, I Hate Models, Chris Liebing,
+                        A.N.I., Fenrick, CUDI und Vini Vici geteilt. Seine auffällige Bühnenpräsenz, bei der er seine
+                        Begeisterung für Techno regelmäßig „raustanzt“, macht ihn einzigartig und steckt jeden Zuhörer
+                        im
+                        Publikum an, mit ihm zu feiern. Die Musik des 24-jährigen zeichnet sich stets durch einen
+                        kraftvollen, treibenden Bass gepaart mit epischen Melodien und Vocals aus, welche ein absoluter
+                        Genuss auf großen Soundanlagen sind und stets ein abwechslungsreiches, geladenes Set
+                        versprechen.
+                        Mit ungebrochenem Enthusiasmus und einer unaufhaltsamen Entwicklung ist NEPTUNE bereit, die
+                        Techno-Szene zu erobern und neue Maßstäbe zu setzen. Seine Liebe zur elektronischen Musik und
+                        sein
+                        Engagement machen ihn zu einem aufstrebenden Künstler, den man im Auge behalten sollte.Also
+                        lasst
+                        uns zusammen eine unvergessliche Party mit ihm haben! </p>
                 </div>
-                <p>NEPTUNE is a rising DJ from Offenburg (GER) who has quickly made a name for himself in the techno
-                    scene with his powerful sets and electrifying stage presence. After making his club debut in
-                    December 2023, he has since performed at numerous venues, electrifying ravers at clubs like
-                    Universal DOG, Halle02, Proton The Club, A8 Discoplex, Hans Bunte Areal, Basement The Club, and
-                    festivals such as LOA Festival in Luxembourg and Ikarus Festival in Memmingen.He has already
-                    shared line-ups with artists like Anxhela, Nusha, Armin van Buuren, Johannes Schuster, Format B,
-                    A.D.H.S., Boris Brejcha, Deborah de Luca, Holy Priest, I Hate Models, Chris Liebing, A.N.I.,
-                    Fenrick, CUDI, and Vini Vici. His intense stage presence, where he literally dances out his
-                    passion for techno, makes him stand out and spreads contagious energy to every crowd.The
-                    24-year-old is known for his powerful, driving basslines combined with epic melodies and vocals,
-                    creating an absolute sonic delight on massive sound systems while delivering a dynamic and
-                    high-energy set.With unstoppable enthusiasm and continuous growth, NEPTUNE is ready to take over
-                    the techno scene and set new standards. His deep passion for electronic music and relentless
-                    dedication make him an artist to watch.So let’s create an unforgettable party with him!</p>
-            </div>
-        </div>
-
-
-        <h2>🎧 Technischer Rider</h2>
-
-        <div class="rider-grid">
-            <div class="gear-card">
-                <img src="images/cdj3000.png" alt="CDJ-3000" class="gear-img">
-                <div class="gear-info">
-                    <div class="gear-title">Pioneer CDJ-3000</div>
-                </div>
-                <div class="tooltip">
-                    Topaktueller Profi-Mediaplayer mit Firmware auf neuestem Stand. Alternativ: CDJ-2000NXS2
-                    möglich.
-                </div>
-            </div>
-
-            <div class="gear-card">
-                <img src="images/djm-v10.png" alt="DJM-V10" class="gear-img">
-                <div class="gear-info">
-                    <div class="gear-title">Pioneer DJM-V10</div>
-                </div>
-                <div class="tooltip">
-                    6-Kanal-Mixer mit voller Effektkontrolle und High-End-Sound – auch DJM-A9 oder DJM-900NXS2
-                    kompatibel.
-                </div>
-            </div>
-
-            <div class="gear-card">
-                <img src="images/cdj2000nxs2.png" alt="CDJ-2000NXS2" class="gear-img">
-                <div class="gear-info">
-                    <div class="gear-title">Pioneer CDJ-2000NXS2</div>
-                </div>
-                <div class="tooltip">
-                    Alternative zum CDJ-3000 – Industriestandard weltweit. Stets geprüft & voll funktionsfähig.
+                <div id="bio-en" class="bio hidden">
+                    <div class="flex">
+                        <h3>Biography</h3>
+                    </div>
+                    <p>NEPTUNE is a rising DJ from Offenburg (GER) who has quickly made a name for himself in the techno
+                        scene with his powerful sets and electrifying stage presence. After making his club debut in
+                        December 2023, he has since performed at numerous venues, electrifying ravers at clubs like
+                        Universal DOG, Halle02, Proton The Club, A8 Discoplex, Hans Bunte Areal, Basement The Club, and
+                        festivals such as LOA Festival in Luxembourg and Ikarus Festival in Memmingen.He has already
+                        shared line-ups with artists like Anxhela, Nusha, Armin van Buuren, Johannes Schuster, Format B,
+                        A.D.H.S., Boris Brejcha, Deborah de Luca, Holy Priest, I Hate Models, Chris Liebing, A.N.I.,
+                        Fenrick, CUDI, and Vini Vici. His intense stage presence, where he literally dances out his
+                        passion for techno, makes him stand out and spreads contagious energy to every crowd.The
+                        24-year-old is known for his powerful, driving basslines combined with epic melodies and vocals,
+                        creating an absolute sonic delight on massive sound systems while delivering a dynamic and
+                        high-energy set.With unstoppable enthusiasm and continuous growth, NEPTUNE is ready to take over
+                        the techno scene and set new standards. His deep passion for electronic music and relentless
+                        dedication make him an artist to watch.So let’s create an unforgettable party with him!</p>
                 </div>
             </div>
-        </div>
-        <!-- <div class="tech-rider">
+
+            <div class="presskit-inner">
+
+                <div class="contact bio">
+
+                    <h3>Technischer Rider</h3>
+
+                    <div class="rider-grid">
+                        <div class="gear-card">
+                            <img src="images/cdj3000.png" alt="CDJ-3000" class="gear-img">
+                            <div class="gear-info">
+                                <div class="gear-title">Pioneer CDJ-3000</div>
+                            </div>
+                            <div class="tooltip">
+                                Topaktueller Profi-Mediaplayer mit Firmware auf neuestem Stand. Alternativ: CDJ-2000NXS2
+                                möglich.
+                            </div>
+                        </div>
+
+                        <div class="gear-card">
+                            <img src="images/djm-v10.png" alt="DJM-V10" class="gear-img">
+                            <div class="gear-info">
+                                <div class="gear-title">Pioneer DJM-V10</div>
+                            </div>
+                            <div class="tooltip">
+                                6-Kanal-Mixer mit voller Effektkontrolle und High-End-Sound – auch DJM-A9 oder
+                                DJM-900NXS2
+                                kompatibel.
+                            </div>
+                        </div>
+
+                        <div class="gear-card">
+                            <img src="images/cdj2000nxs2.png" alt="CDJ-2000NXS2" class="gear-img">
+                            <div class="gear-info">
+                                <div class="gear-title">Pioneer CDJ-2000NXS2</div>
+                            </div>
+                            <div class="tooltip">
+                                Alternative zum CDJ-3000 – Industriestandard weltweit. Stets geprüft & voll
+                                funktionsfähig.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="tech-rider">
                 <h3>Technical Rider</h3>
                 <p>2x CDJ-3000NXS2 / CDJ-2000NXS2<br>1x DJM-V10 / DJM-A9 / DJM-900NXS2<br><em>→ neueste Firmware &
                         vollfunktionsfähig</em></p>
             </div> -->
+                </div>
+            </div>
         </div>
     </section>
 

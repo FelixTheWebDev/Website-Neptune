@@ -81,15 +81,5 @@ header h1 {
   .rider, .media, .videos {
     margin-top: 2rem;
   }
-  .language-toggle {
-    display: flex;
-    gap: 1rem;
-  }
-  .language-toggle button {
-    background: transparent;
-    border: 1px solid #00ffff;
-    color: var(--accent-color-1);
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-  }
+
   .hidden { display: none; }
