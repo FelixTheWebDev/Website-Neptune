@@ -6,6 +6,11 @@
     padding-bottom: var(--space-lg);
     padding-top: 1rem;
     margin: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Schwarz mit 40% Deckkraft */
+    color: white;                        /* Textfarbe */
+    padding: 1rem;
+    border-radius: 0.5rem;               /* optional: abgerundete Ecken */
+
 
     /* background-color: var(--bg-color); */
 

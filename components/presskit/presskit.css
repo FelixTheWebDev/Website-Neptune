@@ -1,10 +1,22 @@
 .presskit {
-  padding: 0rem 1.5rem 2rem;
+  background-image: url("/images/8.jpg");
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .presskit-inner {
-  max-width: 960px;
-  margin: 0 auto;
+  /* max-width: 960px; */
+  /* margin: 0 auto; */
+  background-color: rgba(0, 0, 0, 0.75);
+  /* Schwarz mit 40% Deckkraft */
+  color: white;
+  /* Textfarbe */
+  /* padding: 1rem; */
+
+  /* optional: abgerundete Ecken */
+
 }
 
 .presskit h2 {
@@ -13,8 +25,8 @@
 }
 
 .presskit h3 {
-  font-size: 1.2rem;
-  color: var(--accent-color-1);
+  font-size: 1.4rem;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -31,17 +43,23 @@
   text-decoration: none;
   transition: all 0.2s ease;
 }
+
 .presskit a:hover {
   text-decoration: underline;
 }
 
-.bio, .tech-rider, .rider, .media, .videos {
+.bio,
+.tech-rider,
+.rider,
+.media,
+.videos {
   margin-bottom: 2rem;
   margin-right: 2rem;
   margin-left: 2rem;
 }
 
-.bio p, .tech-rider p {
+.bio p,
+.tech-rider p {
   font-size: 0.95rem;
   color: #ccc;
   margin: 0;
@@ -54,17 +72,14 @@
   font-size: 1rem;
   color: #ddd;
   text-align: justify;
+  padding: 0 1rem;
 }
 
 .bio h3 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  margin-bottom: 1rem;
-  color: var(--accent-color-1);
-}
-
-.bio {
-  padding-top: 2rem;
+  margin-bottom: 1.4rem;
+  text-align: center;
 }
 
 
@@ -73,6 +88,7 @@ ul {
   padding: 0;
   margin: 0;
 }
+
 ul li {
   margin-bottom: 0.4rem;
 }
@@ -90,6 +106,7 @@ ul li {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .lang-btn.active {
   background: #00fff7;
   color: #0a0a0a;
@@ -98,22 +115,23 @@ ul li {
 .bio-section {
   display: none;
 }
+
 .bio-section.active {
   display: block;
 }
 
 section {
-  padding: 60px 20px;
+  /* padding: 60px 20px; */
   max-width: 1000px;
   margin: auto;
 }
 
-.contact, .socials {
+.contact,
+.socials {
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 0.5rem;
-  margin-bottom: 1rem;
 }
 
 .contact p::before {
@@ -125,14 +143,18 @@ section {
   vertical-align: middle;
   background-size: contain;
   background-repeat: no-repeat;
+  /* margin-top: 1rem; */
 }
+
 .contact p:nth-of-type(1)::before {
   background-image: url('https://cdn-icons-png.flaticon.com/512/854/854894.png');
 }
+
 .contact p:nth-of-type(2)::before {
   background-image: url('https://cdn-icons-png.flaticon.com/512/597/597177.png');
   filter: invert(1);
 }
+
 .contact p:nth-of-type(3)::before {
   background-image: url('https://cdn-icons-png.flaticon.com/512/732/732200.png');
 }
@@ -163,6 +185,7 @@ section {
 .language-toggle button:nth-child(1) {
   background-image: url('https://cdn-icons-png.flaticon.com/512/197/197571.png');
 }
+
 .language-toggle button:nth-child(2) {
   background-image: url('https://cdn-icons-png.flaticon.com/512/197/197374.png');
 }
@@ -179,15 +202,20 @@ section {
 
 .gear-card {
   position: relative;
-  background: #1c1c1c;
+  /* background: transparent; */
+    background-color: rgba(20, 0, 0, 0.4);
+  border-radius: 10px;
   overflow: hidden;
   /* box-shadow: 0 4px 12px rgba(0,0,0,0.5); */
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: all 0.2s ease;
   text-align: center;
 }
+
 .gear-card:hover {
   transform: scale(1.02);
+  background: #2e2e2edb;
+  border-radius: 6px;
 }
 
 .gear-img {
@@ -195,11 +223,13 @@ section {
   height: 180px;
   object-fit: contain;
   filter: brightness(0.9);
+  padding: 1rem;
 }
 
 .gear-info {
   padding: 1rem;
 }
+
 .gear-title {
   font-size: 1.1rem;
   font-weight: bold;
@@ -208,8 +238,11 @@ section {
 
 .tooltip {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.9);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
   color: #fff;
   display: flex;
   align-items: center;
@@ -221,6 +254,7 @@ section {
   pointer-events: none;
   font-size: 0.95rem;
 }
+
 .gear-card:hover .tooltip {
   opacity: 1;
   pointer-events: auto;
@@ -233,20 +267,20 @@ section {
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .neptune-contact-image {
   width: 40%;
   height: 240px;
-  border-radius: 6px;  
+  border-radius: 6px;
   object-fit: cover;
   box-shadow: 1px 1px 8px var(--accent-color-1);
 
-      @media (max-width: 648px) {
-        width: 75%;
-        height: auto;
-    }
+  @media (max-width: 648px) {
+    width: 75%;
+    height: auto;
+  }
 }
 
 .contact {
@@ -254,9 +288,16 @@ section {
   flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
-  color: #ccc;
+  color: #fff;
 
   h3 {
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    padding-bottom: 1rem;
+    text-align: center;
   }
 }
+
+.contact .bio h3{
+  margin-bottom: 1.4rem;
+}
+
