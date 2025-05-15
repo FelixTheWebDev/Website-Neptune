@@ -1,11 +1,13 @@
 .scroll-buttons {
     position: absolute;
     top: 0;
+    left: 50%;
     display: flex;
     width: 100%;
     justify-content: center;
     gap: 22px;
-    left: 50%;
+    margin-top: 25rem;
+    
     align-items: center;
     transform: translateX(-50%);
     justify-content: space-around;
