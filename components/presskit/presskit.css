@@ -1,6 +1,5 @@
 .presskit {
-  background-image: url("../images/8.jpg");
-
+background-image: url("/images/8.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,6 +12,7 @@
   background-color: rgba(0, 0, 0, 0.75);
   /* Schwarz mit 40% Deckkraft */
   color: white;
+  border-radius: 5px;
   /* Textfarbe */
   /* padding: 1rem; */
 
