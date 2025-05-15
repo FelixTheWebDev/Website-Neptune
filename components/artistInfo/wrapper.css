@@ -1,10 +1,13 @@
 #about-me {
-    background: rgb(190, 190, 190);
+    background: rgb(228, 204, 204);
     text-align: center;
     padding: var(--space-sm);
     padding-bottom: 0;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
     position: relative;
-    overflow: hidden; /* verhindert das Rausragen */
+    overflow: hidden;
+    /* verhindert das Rausragen */
 }
 
 .about {
@@ -22,7 +25,8 @@
 .about-image {
     width: 100%;
     max-width: 350px;
-    height: 500px; /* feste Höhe, um z. B. nur Oberkörper zu zeigen */
+    height: 500px;
+    /* feste Höhe, um z. B. nur Oberkörper zu zeigen */
     overflow: hidden;
     border-radius: 1.5rem;
 }
@@ -31,7 +35,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top center; /* zeigt oberen Bildbereich */
+    object-position: top center;
+    /* zeigt oberen Bildbereich */
     display: block;
     border-radius: 1.5rem;
 }
@@ -78,12 +83,15 @@
 .social-icons a:nth-child(1) img {
     background: rgb(247, 88, 25);
 }
+
 .social-icons a:nth-child(2) img {
     background: rgb(205, 32, 31);
 }
+
 .social-icons a:nth-child(3) img {
     background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
 }
+
 .social-icons a:nth-child(4) img {
     background: rgb(212, 182, 10);
 }
@@ -102,11 +110,13 @@
         width: 60px;
         height: 60px;
         transition: transform 0.3s ease;
+
     }
 
     .social-arc a img {
         width: 100%;
         height: 100%;
+        box-shadow: -1px 2px 5px black;
     }
 
     .social-arc a:nth-child(1) {
@@ -133,11 +143,11 @@
 @media (max-width: 768px) {
     .social-arc {
         width: 380px;
-        height: 180px;
+        height: 100px;
     }
 
     .social-arc a {
-        width: 50px;
-        height: 50px;
+        width: 65px;
+        height: 65px;
     }
 }

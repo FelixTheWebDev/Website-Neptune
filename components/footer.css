@@ -35,15 +35,15 @@
 }
 
 .footer-link {
-    color: #0af;
+    color: #ff3e0e;
     margin: 0 1rem;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-link:hover {
-    color: #09c;
-    text-decoration: underline;
+    color: #f07253;
+    /* text-decoration: underline; */
 }
 
 .footer-copy {

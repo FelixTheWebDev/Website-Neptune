@@ -1,41 +1,68 @@
 .ticket-button {
-    display: block;
-    padding: 0.4rem 1rem;
-    margin-top:10px;
+  display: block;
+  padding: 0.4rem 1rem;
+  margin-top: 10px;
 
-    border-radius: var(--radius-sm);
-    background-color: var(--accent-color-1);
+  border-radius: var(--radius-sm);
+  background-color: var(--accent-color-1);
 
-    font-size: var(--font-size-sm);
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-  
-    transition: all 0.2s ease-in-out;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: white;
 
-    @media (min-width: 468px) {
-      position: absolute;
-      bottom: 0px;
-      right: 20px;
-      width: 100px;
-      margin-left: auto;
-      margin-bottom: -10px;
-    }
-    @media (min-width: 648px) {
-      position: absolute;
-      width:100px;
-      right: 20px;
-      bottom: 40px;
-      margin: 0;
-      /* height: 24px; */
+  transition: all 0.2s ease-in-out;
 
-    }
+  @media (min-width: 468px) {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    width: 100px;
+    margin-left: auto;
+    margin-bottom: -10px;
   }
-  
-  .ticket-button:hover {
-    background-color: #fff;
+
+  @media (min-width: 648px) {
+    position: absolute;
+    width: 100px;
+    right: 20px;
+    bottom: 40px;
+    margin: 0;
+    /* height: 24px; */
+
+  }
+}
+
+.ticket-button:hover {
+  background-color: #fff;
+  color: var(--accent-color-1);
+  transform: scale(1.05);
+}
+
+.more-events {
+  background: transparent;
+  /* color: #fff; */
+  border: 1px solid #fff;
+  padding: 14px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 200px;
+  /* transition: all 0.2s ease-in-out, transform 0.2s ease; */
+  margin: 1.5rem auto 0;
+  transition: transform 0.2s ease;
+  will-change: transform;
+  transform-origin: center;
+
+  &:hover {
+    background: #fff;
+    filter: brightness(1) invert(0);
     color: var(--accent-color-1);
+    font-weight: 900;
     transform: scale(1.05);
+    transition: transform 0.2s ease;
+    will-change: transform;
+    transform-origin: center;
   }
-  
+}
