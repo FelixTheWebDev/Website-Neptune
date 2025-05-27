@@ -2,7 +2,7 @@
   display: block;
   padding: 0.4rem 1rem;
   margin-top: 10px;
-
+  width: 92%;
   border-radius: var(--radius-sm);
   background-color: var(--accent-color-1);
 
